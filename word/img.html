@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<script>
+		var dateObject = new Date();
+		function getRandom() {
+			var x = Math.sin(dateObject.getDate()+dateObject.getMonth()+dateObject.getYear())*10000;
+			return x-Math.floor(x);
+		}
+		
+		imageList =[
+			"word1.png",
+			"word2.png",
+			"word3.png",
+			"word4.png",
+			"word5.png",
+			"word6.png",
+			"word7.png",
+			"word8.png",
+			"word9.png",
+			"word10.png",
+			"word11.png",
+			"word12.png",
+			"word13.png",
+			"word14.png",
+			"word15.png",
+			"word16.png",
+			"word17.png",
+			"word18.png",
+			"word19.png",
+			"word20.png",
+			"word21.png",
+			"word22.png",
+			"word23.png",
+			"word24.png",
+			"word25.png",
+			"word26.png",
+			"word27.png",
+			"word28.png",
+			"word29.png",
+			"word30.png",
+			"word31.png",
+			"word32.png",
+			"word33.png",
+			"word34.png",
+			"word35.png",
+			"word36.png",
+			"word37.png",
+			"word38.png",
+			"word39.png",
+			"word40.png",
+			"word41.png",
+			"word42.png",
+			"word43.png",
+			"word44.png",
+			"word45.png",
+			"word46.png",
+			"word47.png",
+			"word48.png",
+			"word49.png",
+			"word50.png",
+			"word51.png",
+			"word52.png",
+			"word53.png",
+			"word54.png",
+			"word55.png",
+			"word56.png",
+			"word57.png",
+			"word58.png",
+			"word59.png",
+			"word60.png",
+			"word61.png",
+			"word62.png",
+			"word63.png",
+			"word64.png",
+			"word65.png",
+			"word66.png",
+			"word67.png",
+			"word68.png",
+			"word69.png",
+			"word70.png",
+			"word71.png",
+			"word72.png",
+			"word73.png",
+			"word74.png",
+			"word75.png",
+			"word76.png",
+			"word77.png",
+			"word78.png",
+			"word79.png",
+			"word80.png",
+			"word81.png",
+			"word82.png"
+
+		];
+		var imageIndex = Math.floor(getRandom()*imageList.length);
+		document.write("<img src=" + imageList[imageIndex] + ">");
+	</script>
+<body>
+</html>

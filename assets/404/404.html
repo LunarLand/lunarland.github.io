@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<script>
+		var dateObject = new Date();
+		function getRandom() {
+			var x = Math.sin(dateObject.getDate()+dateObject.getMonth()+dateObject.getYear())*10000;
+			return x-Math.floor(x);
+		}
+		
+		imageList =[
+			"1.png",
+			"2.png"
+		];
+		var imageIndex = Math.floor(getRandom()*imageList.length);
+		document.write("<img src=" + imageList[imageIndex] + ">");
+	</script>
+<body>
+</html>
