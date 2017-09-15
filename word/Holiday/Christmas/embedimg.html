@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<script>
+		var dateObject = new Date();
+		function getRandom() {
+			var x = Math.sin(dateObject.getDate()+dateObject.getMonth()+dateObject.getYear())*10000;
+			return x-Math.floor(x);
+		}
+		
+		imageList =[
+			"word1.png",
+			"word2.png",
+			"word3.png",
+			"word4.png",
+			"word5.png",
+			"word6.png",
+			"word7.png",
+			"word8.png",
+			"word9.png",
+			"word10.png",
+			"word11.png",
+			"word12.png",
+			"word13.png",
+			"word14.png",
+			"word15.png",
+			"word16.png",
+			"word17.png",
+			"word18.png",
+			"word19.png",
+			"word20.png",
+			"word21.png",
+			"word22.png",
+			"word23.png",
+			"word24.png",
+			"word25.png",
+			"word26.png",
+			"word27.png",
+			"word28.png",
+			"word29.png",
+			"word30.png",
+			"word31.png"
+
+		];
+		var imageIndex = Math.floor(getRandom()*imageList.length);
+		document.write("<img src=" + imageList[imageIndex] + " width=200 height=200>");
+	</script>
+<body>
+</html>
